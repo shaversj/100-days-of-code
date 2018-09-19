@@ -2,7 +2,7 @@
 
 **Today's Focus**: Reading files in Python
 
-Code challenge from [Practice Python](http://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html)
+My answer to a code challenge from [Practice Python](http://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html)
 
 **Details**:
 
