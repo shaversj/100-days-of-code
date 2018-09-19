@@ -1,6 +1,6 @@
 ### Day 1: September 18, 2018 
 
-**Today's Focus**: Reading files in Python
+**Today's Focus**: Reading txt files in Python
 
 My answer to a code challenge from [Practice Python](http://www.practicepython.org/exercise/2014/12/06/22-read-from-file.html)
 
