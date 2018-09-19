@@ -17,6 +17,6 @@ Code challenge from [Practice Python](http://www.practicepython.org/exercise/201
         - Returns a list of strings containing the individual lines from a file
 - I used Counter from the Collections module to calculate the number of images in the file. 
 
-**Link to work**: [Github](https://github.com/shaversj/100-days-of-code/days/01/)
+**Link to work**: [Github](https://github.com/shaversj/100-days-of-code/tree/master/days/01)
 
 [Table of Contents](#toc)
