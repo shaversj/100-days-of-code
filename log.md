@@ -1,4 +1,4 @@
-### Day 1: September 18, 2018 
+### Day 1: September 18, 2018
 
 **Today's Focus**: Reading txt files in Python
 
@@ -7,16 +7,17 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Details**:
 
 - Explored various ways to read a file in Python, such as:
-    - the *readline* approach
-        - Reads one line at a time
-    - the *for line in file* approach
-        - On each iteration, the file cursor is moved to the beginning of the next line.
-    - the *read* approach
-        - Read the contents of a file into a single string
-    - the *readlines* approach
-        - Returns a list of strings containing the individual lines from a file
+
 - I used Counter from the Collections module to calculate the number of images in the file. 
 
 **Link to work**: [Github](days/01)
 
-[Table of Contents](#toc)
+### Day 2: September 19, 2018
+
+**Today's Focus**: Web scraping using Python and Beautiful Soup
+
+**Details**:
+
+- In preperation for a future project, I reviewed several tutorials and learned the basics for how to scrape websites using beautiful soup.
+
+**Link to work**: [Github](days/02)
