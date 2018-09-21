@@ -22,3 +22,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 - In preperation for a future project, I reviewed several tutorials and learned the basics for how to scrape websites using beautiful soup.
 
 **Link to work**: [Github](days/02)
+
+----
+### Day 3: September 20, 2018
+
+**Today's Focus**: Created a script to backup and clear out my downloads directory
+
+**Link to work**: [Github](days/03)
