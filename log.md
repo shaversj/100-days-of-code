@@ -29,3 +29,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Today's Focus**: Created a script to backup and clear out my downloads directory.
 
 **Link to work**: [Github](days/03)
+
+----
+### Day 4: September 21, 2018
+
+**Today's Focus**: Coding challenge
+
+**Link to work**: [Github](days/04)
