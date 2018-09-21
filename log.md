@@ -26,6 +26,6 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 ----
 ### Day 3: September 20, 2018
 
-**Today's Focus**: Created a script to backup and clear out my downloads directory
+**Today's Focus**: Created a script to backup and clear out my downloads directory.
 
 **Link to work**: [Github](days/03)

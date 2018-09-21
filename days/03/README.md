@@ -1,1 +1,1 @@
-Script to backup and clear out my downloads directory.
+Created a script to backup and clean my downloads directory.

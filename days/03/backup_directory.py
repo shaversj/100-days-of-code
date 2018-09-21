@@ -3,7 +3,7 @@ import time
 import zipfile
 import send2trash
 
-print('------Download Directory Cleaner--------')
+print('-----Download Directory Cleaner-------')
 
 os.chdir('/Users/shaverj/Downloads')
 downloads_dir = '/Users/shaverj/Downloads'
