@@ -2,24 +2,13 @@ import os
 import csv
 from collections import Counter
 
+votes = []
+
 
 def main():
-    """Election Results
-    -------------------------
-    Total Votes: 620100
-    -------------------------
-    Rogers: 36.0% (223236)
-    Gomez: 54.0% (334854)
-    Brentwood: 4.0% (24804)
-    Higgins: 6.0% (37206)
-    -------------------------
-    Winner: Gomez
-    -------------------------
-    """
-    pass
 
-
-votes = []
+    read_data()
+    count_and_print_results()
 
 
 def read_data():
@@ -45,13 +34,19 @@ def read_data():
             votes.append(line.get('Candidate'))
 
 
-def most_common():
+def calculate_winner():
     data = Counter(votes)
     return(max(data, key=data.get))
 
 
-def count_data():
+def count_and_print_results():
     """Count the number of votes for each candidate.
+
+    Total Votes:     4324001
+    -------------------------
+    Khan:     51%    2218231
+    Correy:   16%    704200
+
     """
 
     total = len(votes)
@@ -107,9 +102,9 @@ def count_data():
     print(
         f'Cordin:   {round(int(count_cordin) / int(total) * 100.0)}%     {(count_cordin)}')
     print('---------------------------------------')
-    print(f'Winner: {most_common()}')
+    print(f'Winner: {calculate_winner()}')
     print('---------------------------------------')
 
 
-read_data()
-count_data()
+if __name__ == "__main__":
+    main()
