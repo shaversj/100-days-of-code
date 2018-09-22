@@ -36,3 +36,12 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Today's Focus**: Python coding challenge that required me to import voting results from a csv file. My task was to create a Python script that analyzes the votes and calculates the winner.
 
 **Link to work**: [Github](days/04)
+
+### Day 5: September 22, 2018
+
+**Today's Focus**: Finished completing the Python coding challenge from yesterday. I solved the challenge using two different solutions.
+
+- I initially iterated over a for loop and += 1 to calculate the totals. 
+- I then imported Counter from the collections module to return the same results. Counter required me to use a lot less code then what I used at first. Counter returns a dictionary and calculates the totals very easily.
+
+**Link to work**: [Github](days/04)
