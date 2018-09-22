@@ -37,6 +37,7 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 
 **Link to work**: [Github](days/04)
 
+----
 ### Day 5: September 22, 2018
 
 **Today's Focus**: Finished completing the Python coding challenge from yesterday. I solved the challenge using two different solutions.
