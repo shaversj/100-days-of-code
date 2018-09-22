@@ -33,6 +33,6 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 ----
 ### Day 4: September 21, 2018
 
-**Today's Focus**: Coding challenge.
+**Today's Focus**: Python coding challenge that required me to import voting results from a csv file. My task was to create a Python script that analyzes the votes and calculates the winner.
 
 **Link to work**: [Github](days/04)
