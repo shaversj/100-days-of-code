@@ -8,7 +8,9 @@ votes = []
 def main():
 
     read_data()
-    count_and_print_results()
+    counter_results()
+    # count_and_print_results()
+    # count_and_print_results() uses more code to return the the same results as counter_results().
 
 
 def read_data():
@@ -16,18 +18,42 @@ def read_data():
     Process the polling data and add it to a data structure
     """
     base_folder = os.path.dirname(__file__)
-    filename1 = os.path.join(base_folder, 'data', 'election_data_1.csv')
+    filename = os.path.join(base_folder, 'data', 'election_data_1.csv')
 
-    with open(filename1, 'r', encoding='utf-8') as f1:
-        reader1 = csv.DictReader(f1)
+    with open(filename, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
 
-        for line in reader1:
+        for line in reader:
             votes.append(line.get('Candidate'))
 
 
 def calculate_winner():
     data = Counter(votes)
-    return(max(data, key=data.get))
+    return (max(data, key=data.get))
+
+
+def counter_results():
+    """
+    Use Counter to calculate the total votes and store the values in a dictionary.
+
+    A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values.
+
+    You can access the elements the same way you would another dictionary.
+    """
+
+    data = Counter(votes)
+    total = len(votes)
+
+    print('---------------------------------------')
+    print('-----------Election Results------------')
+    print('---------------------------------------')
+    print(f'Total Votes:      {total}')
+    print('---------------------------------------')
+    for k, v in data.items():
+        print(f'{k}:    {round(int(v) / int(total) * 100.0)}%    {v}')
+    print('---------------------------------------')
+    print(f'Winner: {calculate_winner()}')
+    print('---------------------------------------')
 
 
 def count_and_print_results():
