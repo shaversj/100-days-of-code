@@ -33,6 +33,6 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 ----
 ### Day 4: September 21, 2018
 
-**Today's Focus**: Coding challenge
+**Today's Focus**: Coding challenge.
 
 **Link to work**: [Github](days/04)
