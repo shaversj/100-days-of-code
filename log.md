@@ -46,3 +46,13 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 - I then imported Counter from the collections module to return the same results. Counter required me to use a lot less code then what I used at first. Counter returns a dictionary and calculates the totals very easily.
 
 **Link to work**: [Github](days/04)
+
+----
+### Day 6: September 23, 2018
+
+**Today's Focus**: I followed an [AWS Blog Post](https://aws.amazon.com/blogs/aws/new-amazon-connect-and-amazon-lex-integration/) and successfully recreated a workflow with Amazon Connect, Lex, Lambda and DynamoDB. 
+
+- I learned how to debug an AWS Lambda fucntion by enabling DEBUG level logging, which allowed me to view the logs with AWS Cloudwatch.
+- I also learned how to use Amazon Connect and Amazon Lex.
+
+**Link to work**: [Github](days/06)
