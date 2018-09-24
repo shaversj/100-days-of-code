@@ -56,3 +56,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 - I also learned how to use Amazon Connect and Amazon Lex.
 
 **Link to work**: [Github](days/06)
+
+----
+### Day 7: September 24, 2018
+
+**Today's Focus**: Played around with the Javascript SPA from the [AWS Blog Post](https://aws.amazon.com/blogs/aws/new-amazon-connect-and-amazon-lex-integration/) and enabled Twilio integration with the Amazon Lex bot that I created. The SPA calls DynamoDB directly and uses Amazon Cognito to manage the access to the database.
+
+**Link to work**: [Github](days/06)
