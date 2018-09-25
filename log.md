@@ -63,3 +63,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Today's Focus**: Played around with the Javascript SPA from the [AWS Blog Post](https://aws.amazon.com/blogs/aws/new-amazon-connect-and-amazon-lex-integration/) and enabled Twilio integration with the Amazon Lex bot that I created. The SPA calls DynamoDB directly and uses Amazon Cognito to manage the access to the database.
 
 **Link to work**: [Github](days/06)
+
+----
+### Day 8: September 25, 2018
+
+**Today's Focus**: Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
+
+**Link to work**: [Github](days/08)
