@@ -70,3 +70,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Today's Focus**: Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
 
 **Link to work**: [Github](days/08)
+
+----
+### Day 9: September 26, 2018
+
+**Today's Focus**: I continued to work on the code challenge from yesterday. I used doctest to test the script that I made yesterday. Doing so allowed me to see several use cases that I did not account for. My script initially counted a word twice depending on if it contained a capital letter or punctuation mark. Armed with the new information, I proceeded to add a function that removed all of the punctuation from the string before calling the function that counts the number of words. 
+
+**Link to work**: [Github](days/08)

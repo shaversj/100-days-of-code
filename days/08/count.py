@@ -1,18 +1,48 @@
-import doctest
+import string
 from collections import Counter
-import pprint
 
 
-def count_words(data: str) -> str:
-    """Count Words in a String - Counts the number of individual words in a string.
+def remove_punctuation(data: str) -> str:
+    """Removes all punctuation from the string.
+    """
+    for c in string.punctuation:
+        data = data.replace(c, "")
+    return(data)
+
+
+def count_words_len(data: str):
+    """Count number of words in a string using length.
+
+    >>> count_words_len('Columbus is a great place to live.')
+    7
+    >>> count_words_len('I love Python.')
+    3
+    >>> count_words_len('Did you ever think you would sell your house?')
+    9
+    """
+
+    data = remove_punctuation(data)
+    data = data.lower()
+
+    # Split the str by whitespace.
+    data = data.split()
+
+    return(len(data))
+
+
+def count_words(data: str):
+    """Count number of words in a string using a for loop.
 
     >>> count_words('Columbus is a great place to live.')
     7
     >>> count_words('I love Python.')
     3
-    >>> count_word('Did you ever think you would sell your house?')
+    >>> count_words('Did you ever think you would sell your house?')
     9
     """
+
+    data = remove_punctuation(data)
+    data = data.lower()
 
     # Split the str by whitespace.
     data = data.split()
@@ -25,42 +55,46 @@ def count_words(data: str) -> str:
 
 
 def print_summary(data: str) -> str:
-    """Counts the number of individual words in a string. For added complexity read these strings in from a text file and generate a summary.
+    """Counts the number of individual words in a string and prints a summary of how many times each word is mentioned in the string.
 
-    >>> count_words('Columbus is a great place to live.')
-    Columbus 1
+    >>> print_summary('Columbus is a great place to live.')
+    columbus 1
     is 1
     a 1
     great 1
     place 1
     to 1
     live 1
-    >>> count_words('I love Python.')
-    I 1
-    Love 1
-    Python 1
-    >>> count_word('Did you ever think you would sell your house?')
-    Did 1
+    >>> print_summary('I love Python. Do you love Python?')
+    i 1
+    love 2
+    python 2
+    do 1
     you 1
+    >>> print_summary('Did you ever think you would sell your house?')
+    did 1
+    you 2
     ever 1
     think 1
-    you 1
     would 1
     sell 1
     your 1
-    house? 1
+    house 1
     """
+
+    data = remove_punctuation(data)
+    data = data.lower()
 
     # Split the str by whitespace.
     data = (Counter(data.split()))
 
-    print(data)
+    for word, count in data.items():
+        print(word, count)
 
 
 if __name__ == "__main__":
-    nl = '\n'
+    data = input('Input a string for the function to count:')
     print(
-        'Input a string and the function will return the total number of words and a summary of the number of characters')
-    data = input("")
-    print(f'Your string has {count_words(data)} total words.')
-    print(print_summary(data))
+        f'Your string has a total of {count_words(data)} words!')
+    print_summary(data)
+    # print(count_words_len(data))
