@@ -77,3 +77,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Today's Focus**: I continued to work on the code challenge from yesterday. I used doctest to test the script that I made yesterday. Doing so allowed me to see several use cases that I did not account for. My script initially counted a word twice depending on if it contained a capital letter or punctuation mark. Armed with the new information, I proceeded to add a function that removed all of the punctuation from the string before calling the function that counts the number of words. 
 
 **Link to work**: [Github](days/08)
+
+----
+### Day 10: September 27, 2018
+
+**Today's Focus**: The goal is to design, implement and test a program which allows the user to search a subset of the books which have appeared in the New York Times best seller lists. The program requires me to solve the problem by using file processing, lists and strings in Python.
+
+**Link to work**: [Github](days/09)
