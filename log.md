@@ -83,4 +83,11 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 
 **Today's Focus**: The goal is to design, implement and test a program which allows the user to search a subset of the books which have appeared in the New York Times best seller lists. The program requires me to solve the problem by using file processing, lists and strings in Python.
 
-**Link to work**: [Github](days/09)
+**Link to work**: [Github](days/10)
+
+----
+### Day 11: September 28, 2018
+
+**Today's Focus**: I added 3 new functions and finished the code challenge from yesterday.
+
+**Link to work**: [Github](days/10)
