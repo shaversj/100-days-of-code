@@ -91,3 +91,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Today's Focus**: I added 3 new functions and finished the code challenge from yesterday.
 
 **Link to work**: [Github](days/10)
+
+----
+### Day 12: September 29, 2018
+
+**Today's Focus**: Worked on a GDP and Income related project from the [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/). Learned why you should add try/exception statements when opening a file.
+
+**Link to work**: [Github](days/12)
