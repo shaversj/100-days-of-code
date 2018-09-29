@@ -1,10 +1,13 @@
 import csv
 import time
-import pylab
+# import pylab
+
+data = {}
 
 
 def main():
     open_file()
+    display_by_region()
 
 
 def open_file():
@@ -35,11 +38,22 @@ def open_file():
 
 
 def parse_file(csv_reader):
-    pass
+    """
+    Prompt the user to select a region to gather data from. You can then read the contents of the file into your data structure. If you use a dictionary, you likely want the state name as the key, and a list of data about the state as the value. If you use a list, you likely want the state name as the first item in the list followed by the remaining data. You will only need states from the selected region in your data structure.
+    """
+
+    # Skip Header in CSV
+    next(csv_reader, None)
+
+    for line in csv_reader:
+        data[line[0]] = {'State': line[0], 'Region': line[1], 'Population (m)': line[2], 'GDP (b)': line[3], 'Income (b)': line[4], 'Subsidies (m)':
+                         line[5], 'Compensation (b)': line[5], 'Taxes (b)': line[6], 'GDP per capita': (float(line[3]) * 1000000000) / (float(line[2]) * 1000000), 'Income per capita': (float(line[4]) * 1000000000) / (float(line[2]) * 1000000)}
 
 
 def display_by_region():
-    pass
+
+    for key, value in data.items():
+        print(value)
 
 
 def plot_by_region():
