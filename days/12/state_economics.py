@@ -1,5 +1,6 @@
 import csv
 import time
+import string
 # import pylab
 
 data = {}
@@ -7,7 +8,11 @@ data = {}
 
 def main():
     open_file()
-    display_by_region()
+    search_region = str(input(
+        'Specify a region from this list -- far_west,great_lakes,mideast,new_england,plains,rocky_mountain,southeast,southwest,all: '""))
+    search_region = search_region.title()
+    print(search_region)
+    search_by_region(search_region)
 
 
 def open_file():
@@ -50,10 +55,11 @@ def parse_file(csv_reader):
                          line[5], 'Compensation (b)': line[5], 'Taxes (b)': line[6], 'GDP per capita': (float(line[3]) * 1000000000) / (float(line[2]) * 1000000), 'Income per capita': (float(line[4]) * 1000000000) / (float(line[2]) * 1000000)}
 
 
-def display_by_region():
+def search_by_region(search_region):
 
     for key, value in data.items():
-        print(value)
+        if search_region in value['Region']:
+            print(value)
 
 
 def plot_by_region():
