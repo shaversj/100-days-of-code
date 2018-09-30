@@ -1,6 +1,7 @@
 import csv
 import time
 import string
+import operator
 # import pylab
 
 data = {}
@@ -8,11 +9,14 @@ data = {}
 
 def main():
     open_file()
+
     search_region = str(input(
         'Specify a region from this list -- far_west,great_lakes,mideast,new_england,plains,rocky_mountain,southeast,southwest,all: '""))
     search_region = search_region.title()
     print(search_region)
     search_by_region(search_region)
+
+    # max_gdp()
 
 
 def open_file():
@@ -57,9 +61,25 @@ def parse_file(csv_reader):
 
 def search_by_region(search_region):
 
+    # Print header
+    print('{:15s} {:14s}    {:7s}    {:10s}   {:13s}    {:16s}   {:9s}     {:14s}     {:17s}'.format(
+        'State', 'Population (m)', 'GDP (b)', 'Income (b)', 'Subsidies (m)', 'Compensation (b)', 'Taxes (b)', 'GDP per capita', 'Income per capita'))
+
     for key, value in data.items():
         if search_region in value['Region']:
-            print(value)
+            print('{:15s} {:>14,.2f}    {:>7,.2f}    {:>10,.2f}   {:>13,.2f}    {:>16,.2f}   {:>9,.2f}     {:>14,.2f}     {:>17,.2f}'.format(
+                value['State'], float(value['Population (m)']), float(value['GDP (b)']), float(value['Income (b)']), float(value['Subsidies (m)']), float(value['Compensation (b)']), float(value['Taxes (b)']), float(value['GDP per capita']), float(value['Income per capita'])))
+        # print(value['Region'], value['Population (m)'])
+
+
+def max_gdp():
+
+    # print(max(dict["data"].items(), key=lambda x: x[8]['GDP per capita'])[0])
+
+    sorted_by_value = max((value['GDP per capita'], key)
+                          for (key, value) in data.items())
+
+    print(sorted_by_value[0])
 
 
 def plot_by_region():

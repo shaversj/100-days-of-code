@@ -98,3 +98,12 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 **Today's Focus**: Worked on a GDP and Income related project from the [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/). Learned why you should add try/exception statements when opening a file.
 
 **Link to work**: [Github](days/12)
+
+----
+### Day 13: September 30, 2018
+
+**Today's Focus**: Continued working on the GDP and Income related project. I used the string format method to print out a large table with several columns. The process is easy but very time consuming. I promised myself that I would never do it again.
+
+I also added a function that finds the max value in a dictionary. This was a little tricky because dictionaries are not typically sorted. I was able to find the max value by using a list comprehension and the sorted function.
+
+**Link to work**: [Github](days/12)
