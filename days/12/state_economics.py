@@ -6,17 +6,44 @@ import operator
 
 data = {}
 
+state_with_max_gdp_in_region_results = []
+state_with_min_gdp_in_region_results = []
+
+state_with_max_income_in_region_results = []
+state_with_min_income_in_region_results = []
+
 
 def main():
     open_file()
 
     search_region = str(input(
-        'Specify a region from this list -- far_west,great_lakes,mideast,new_england,plains,rocky_mountain,southeast,southwest,all: '""))
-    search_region = search_region.title()
-    print(search_region)
-    search_by_region(search_region)
+        'Specify a region from this list -- far_west,great_lakes,mideast,new_england,plains,rocky_mountain,southeast,southwest: '""))
 
-    # max_gdp()
+    search_region = search_region.title()
+    print()
+
+    print(f'Data for the {search_region} region:')
+    print()
+
+    find_state_with_max_gdp(search_region)
+    print(
+        f'{str(state_with_max_gdp_in_region_results[0])} has the highest GDP per capita at ${float(state_with_max_gdp_in_region_results[1]):,.2f}')
+    print(
+        f'{str(state_with_min_gdp_in_region_results[0])} has the lowest GDP per capita at ${float(state_with_min_gdp_in_region_results[1]):,.2f}')
+    print()
+
+    find_state_with_max_income(search_region)
+    print(
+        f'{str(state_with_max_income_in_region_results[0])} has the highest Income per capita at ${float(state_with_max_income_in_region_results[1]):,.2f}')
+
+    print(
+        f'{str(state_with_min_income_in_region_results[0])} has the lowest Income per capita at ${float(state_with_min_income_in_region_results[1]):,.2f}')
+
+    print()
+
+    print(f'Data for all states in the {search_region} region:')
+    print()
+    search_by_region(search_region)
 
 
 def open_file():
@@ -72,14 +99,58 @@ def search_by_region(search_region):
         # print(value['Region'], value['Population (m)'])
 
 
-def max_gdp():
+def find_state_with_max_gdp(search_region):
 
-    # print(max(dict["data"].items(), key=lambda x: x[8]['GDP per capita'])[0])
+    results = {}
 
-    sorted_by_value = max((value['GDP per capita'], key)
-                          for (key, value) in data.items())
+    for key, value in data.items():
+        if search_region in value['Region']:
+            if key not in results:
+                results[key] = value
+            else:
+                continue
 
-    print(sorted_by_value[0])
+    max_region_gdp_results = max((value['GDP per capita'], key)
+                                 for (key, value) in results.items())
+
+    min_region_gdp_results = min((value['GDP per capita'], key)
+                                 for (key, value) in results.items())
+
+    state_with_max_gdp_in_region_results.append(max_region_gdp_results[1])
+    state_with_max_gdp_in_region_results.append(
+        float(max_region_gdp_results[0]))
+
+    state_with_min_gdp_in_region_results.append(min_region_gdp_results[1])
+    state_with_min_gdp_in_region_results.append(
+        float(min_region_gdp_results[0]))
+
+
+def find_state_with_max_income(search_region):
+
+    results = {}
+
+    for key, value in data.items():
+        if search_region in value['Region']:
+            if key not in results:
+                results[key] = value
+            else:
+                continue
+
+    max_region_income_results = max((value['Income per capita'], key)
+                                    for (key, value) in results.items())
+
+    min_region_income_results = min((value['Income per capita'], key)
+                                    for (key, value) in results.items())
+
+    state_with_max_income_in_region_results.append(
+        max_region_income_results[1])
+    state_with_max_income_in_region_results.append(
+        float(max_region_income_results[0]))
+
+    state_with_min_income_in_region_results.append(
+        min_region_income_results[1])
+    state_with_min_income_in_region_results.append(
+        float(min_region_income_results[0]))
 
 
 def plot_by_region():
@@ -87,7 +158,6 @@ def plot_by_region():
 
 
 def plot_gression():
-    # provided for me
     pass
 
 
