@@ -107,3 +107,10 @@ My answer to a code challenge from [Practice Python](http://www.practicepython.o
 I also added a function that finds the max value in a dictionary. This was a little tricky because dictionaries are not typically sorted. I was able to find the max value by using a list comprehension and the sorted function.
 
 **Link to work**: [Github](days/12)
+
+----
+### Day 14: October 1, 2018
+
+**Today's Focus**: I learned how to use Pytest today. Using Pytest and TDD helped me to see gaps in my code. I created a testcase for a script that checks to see if a string is a palindrome.
+
+**Link to work**: [Github](days/14)
