@@ -121,3 +121,10 @@ I also added a function that finds the max value in a dictionary. This was a lit
 **Today's Focus**: Played around with requests and the OpenWeather API.
 
 **Link to work**: [Github](days/15)
+
+----
+### Day 16: October 3, 2018
+
+**Today's Focus**: Completed three code challenges that were associated with string manipulation.
+
+**Link to work**: [Github](days/16)
