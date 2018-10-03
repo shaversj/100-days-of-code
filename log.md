@@ -114,3 +114,10 @@ I also added a function that finds the max value in a dictionary. This was a lit
 **Today's Focus**: I learned how to use Pytest today. Using Pytest and TDD helped me to see gaps in my code. I created a testcase for a script that checks to see if a string is a palindrome.
 
 **Link to work**: [Github](days/14)
+
+----
+### Day 15: October 2, 2018
+
+**Today's Focus**: Played around with requests and the OpenWeather API.
+
+**Link to work**: [Github](days/15)
