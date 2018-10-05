@@ -128,3 +128,10 @@ I also added a function that finds the max value in a dictionary. This was a lit
 **Today's Focus**: Completed three code challenges that were associated with string manipulation.
 
 **Link to work**: [Github](days/16)
+
+----
+### Day 17: October 4, 2018
+
+**Today's Focus**: Began working on a document retrieval project from [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/06_Dictionaries/DocRetrieval/)
+
+**Link to work**: [Github](days/17)
