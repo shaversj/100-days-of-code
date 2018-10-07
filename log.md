@@ -142,3 +142,9 @@ I also added a function that finds the max value in a dictionary. This was a lit
 **Today's Focus**: Continued to work on a document retrieval project from [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/06_Dictionaries/DocRetrieval/). Started to learn about how to add sets as values in a dictionary.
 
 **Link to work**: [Github](days/17)
+
+----
+### Day 19: October 6, 2018
+
+**Today's Focus**: Completed a code challenge from [Pybites](https://codechalleng.es/bites/7/) I learned enough about datetime to know that I should import a library if I need to do a lot of work with datetime. 
+**Link to work**: [Pybites](https://codechalleng.es/bites/7/)
