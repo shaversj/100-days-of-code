@@ -147,6 +147,7 @@ I also added a function that finds the max value in a dictionary. This was a lit
 ### Day 19: October 6, 2018
 
 **Today's Focus**: Completed a code challenge from [Pybites](https://codechalleng.es/bites/7/) I learned enough about datetime to know that I should import a library if I need to do a lot of work with datetime. 
+
 **Link to work**: [Pybites](https://codechalleng.es/bites/7/)
 
 ----
@@ -155,3 +156,10 @@ I also added a function that finds the max value in a dictionary. This was a lit
 **Today's Focus**: Completed a code challenge that required me to find an element that appears once in an array where every other element appears more than once. This was the first time that I can recall using the list.count() method.
 
 The method count() returns count of how many times obj occurs in list.
+
+----
+### Day 21: October 8, 2018
+
+**Today's Focus**: Created my first class using Python. I will be using the  Google Maps API to get a route between cities. [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/08_ClassDesign/GoogleMap/Project11.pdf)
+
+**Link to work**: [Github](days/21)
