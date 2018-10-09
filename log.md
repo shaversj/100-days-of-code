@@ -163,3 +163,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Created my first class using Python. I will be using the  Google Maps API to get a route between cities. [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/08_ClassDesign/GoogleMap/Project11.pdf)
 
 **Link to work**: [Github](days/21)
+
+----
+### Day 22: October 9, 2018
+
+**Today's Focus**: I continued working on the Google Maps API project. I created and played around with the __str__ and __repr__ methonds.  [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/08_ClassDesign/GoogleMap/Project11.pdf)
+
+**Link to work**: [Github](days/21)
