@@ -15,8 +15,7 @@ def main():
     print(repr(t1))
     print()
     # print("|".join(t1.destination))
-    print(Tour.destinations(t1))
-    print(Tour.distance(t1))
+    print(t1.distance())
 
     """
     print("t1: {}\nt2:{}\nt3:{}".format(t1,t2,t3))
