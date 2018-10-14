@@ -177,3 +177,22 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: I continued working on the Google Maps API project. I added a method to the Tour class called distance. I ended up using the params keyword argruement of the requests module to build the url for the API call.   [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/08_ClassDesign/GoogleMap/Project11.pdf)
 
 **Link to work**: [Github](days/21)
+
+----
+### Day 24: October 11, 2018
+
+**Today's Focus**: Continued working on the Google Maps API project. [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/08_ClassDesign/GoogleMap/Project11.pdf)
+
+**Link to work**: [Github](days/21)
+
+----
+### Day 25: October 12, 2018
+
+**Today's Focus**: Completed 3 coding challenges on coderbyte.
+
+----
+### Day 26: October 13, 2018
+
+**Today's Focus**: Completed coding excersise from the Practical Programming book. The excersise gave me the opportunity to practice creating classes.
+
+**Link to work**: [Github](days/26)
