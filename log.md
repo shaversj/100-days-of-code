@@ -196,3 +196,8 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Completed coding excersise from the Practical Programming book. The excersise gave me the opportunity to practice creating classes.
 
 **Link to work**: [Github](days/26)
+
+----
+### Day 27: October 13, 2018
+
+**Today's Focus**: Completed a coding challenge on coderbyte.
