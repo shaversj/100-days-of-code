@@ -198,6 +198,11 @@ The method count() returns count of how many times obj occurs in list.
 **Link to work**: [Github](days/26)
 
 ----
-### Day 27: October 13, 2018
+### Day 27: October 14, 2018
 
 **Today's Focus**: Completed a coding challenge on coderbyte.
+
+----
+### Day 28: October 15, 2018
+
+**Today's Focus**: Worked through a tutorial from a class on [Talkpython](https://training.talkpython.fm/courses/details/python-language-jumpstart-building-10-apps). I learned about static methods and how to model csv data using a Class.
