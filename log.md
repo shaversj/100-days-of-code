@@ -206,3 +206,10 @@ The method count() returns count of how many times obj occurs in list.
 ### Day 28: October 15, 2018
 
 **Today's Focus**: Worked through a tutorial from a class on [Talkpython](https://training.talkpython.fm/courses/details/python-language-jumpstart-building-10-apps). I learned about static methods and how to model csv data using a Class.
+
+----
+### Day 29: October 16, 2018
+
+**Today's Focus**: Started to work on a project to scrape the addresses from the Delaware County Sheriff Sale website. The goal is to plot the addresses on a map. Since the addresses are embedded within a table, I got a chance to use Beautiful Soup and Pandas to scrape the data from the website.
+
+**Link to work**: [Github](days/29)
