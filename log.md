@@ -213,3 +213,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Started to work on a project to scrape the addresses from the Delaware County Sheriff Sale website. The goal is to plot the addresses on a map. Since the addresses are embedded within a table, I got a chance to use Beautiful Soup and Pandas to scrape the data from the website.
 
 **Link to work**: [Github](days/29)
+
+----
+### Day 30: October 17, 2018
+
+**Today's Focus**: Continued to work on my web scraping project. I used Geocoder to find the latitude and longitude of the addresses. I also used gmplot to plot the lat/lng on a map.
+
+**Link to work**: [Github](days/29)

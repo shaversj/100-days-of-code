@@ -4,7 +4,8 @@ import pandas as pd
 import urllib.request
 import ssl
 
-
+delaware = {}
+delaware_list = []
 """
 User Story: As a user, I want to see the address of a house on a map.
 
@@ -42,7 +43,11 @@ def scrape_website(site):
     for tr in table_rows:
         td = tr.find_all('td')
         row = [i.text for i in td]
-        print(row)
+        delaware_list.append(row)
+
+    for i in delaware_list:
+        for p in i:
+            print(p)
 
 
 def scrape_with_pandas():
