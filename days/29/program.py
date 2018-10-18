@@ -3,29 +3,16 @@ import requests
 import pandas as pd
 import urllib.request
 import ssl
+import geocoder
+import gmplot
+import config
 
 delaware = {}
 delaware_list = []
-"""
-User Story: As a user, I want to see the address of a house on a map.
+results = []
+latitude = []
+longitude = []
 
-User Story: As a user, I will be given a list of houses that will be in an upcoming sheriff sale.
-
-Scrape: https://sheriff.co.delaware.oh.us/sheriff-sales/
-
-Capture all of the information below from the webpage:
-Date
-Address
-Property Description
-Case Number
-Appraisal Value
-Deposit	Purchaser
-Purchaser Price
-
-
-
-
-"""
 
 URL = 'https://sheriff.co.delaware.oh.us/sheriff-sales/'
 
@@ -50,6 +37,27 @@ def scrape_website(site):
             print(p)
 
 
+def scrape_website_v2(site):
+
+    soup = bs4.BeautifulSoup(site.text, 'html.parser')
+    tds = [row.findAll('td') for row in soup.findAll('tr')]
+    print(tds)
+
+
+def scrape_website_v3(site):
+
+    soup = bs4.BeautifulSoup(site.text, 'html.parser')
+    table_rows = soup.find_all('tr')
+    for tr in table_rows:
+        td = tr.find_all('td')
+        results.append([i.text for i in td])
+
+    # remove header
+    del results[0]
+
+    return results
+
+
 def scrape_with_pandas():
     context = ssl._create_unverified_context()
     response = urllib.request.urlopen(URL, context=context)
@@ -68,19 +76,28 @@ def scrape_with_pandas():
 
 
 def add_geocode_addresses():
-    """
-    https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
 
-    Retrieve lat and long for each address.
-    """
+    for address in results:
+        g = geocoder.google(str(address[1]))
 
-    pass
+        latitude.append(g.latlng[0])
+        longitude.append(g.latlng[1])
+
+    return latitude, longitude
 
 
-def plot_addresses():
-    pass
+def plot_map():
+
+    print(len(latitude))
+    gmap = gmplot.GoogleMapPlotter(latitude[0], longitude[0], 13)
+    gmap.apikey = config.api_key
+
+    gmap.scatter(latitude, longitude, edge_width=10)
+    gmap.draw('maps.html')
 
 
 if __name__ == "__main__":
     site = pull_site()
-    scrape_website(site)
+    scrape_website_v3(site)
+    add_geocode_addresses()
+    plot_map()

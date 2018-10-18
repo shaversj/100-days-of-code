@@ -220,3 +220,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Continued to work on my web scraping project. I used Geocoder to find the latitude and longitude of the addresses. I also used gmplot to plot the lat/lng on a map.
 
 **Link to work**: [Github](days/29)
+
+----
+### Day 31: October 18, 2018
+
+**Today's Focus**: Completed my web scraping project. I was able to write a program that scraped addresses from a website, retrieved the latitude and longitude for each address and plotted the coordinates on map.
+
+**Link to work**: [Github](days/29)
