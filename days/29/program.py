@@ -18,8 +18,11 @@ URL = 'https://sheriff.co.delaware.oh.us/sheriff-sales/'
 
 
 def pull_site():
-    raw_site_page = requests.get(URL)
-    raw_site_page.raise_for_status()
+    try:
+        raw_site_page = requests.get(URL)
+    except requests.exceptions.RequestException as e:
+        print(e)
+
     return raw_site_page
 
 
@@ -78,8 +81,8 @@ def scrape_with_pandas():
 def add_geocode_addresses():
 
     for address in results:
-        g = geocoder.google(str(address[1]))
 
+        g = geocoder.google(str(address[1]))
         latitude.append(g.latlng[0])
         longitude.append(g.latlng[1])
 
@@ -88,7 +91,6 @@ def add_geocode_addresses():
 
 def plot_map():
 
-    print(len(latitude))
     gmap = gmplot.GoogleMapPlotter(latitude[0], longitude[0], 13)
     gmap.apikey = config.api_key
 
