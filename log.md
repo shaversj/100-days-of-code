@@ -233,3 +233,9 @@ The method count() returns count of how many times obj occurs in list.
 
 **Today's Focus**: I added try/except clauses to my web scraping project.
 **Link to work**: [Github](days/29)
+
+----
+### Day 33: October 20, 2018
+
+**Today's Focus**: Completed a coding challenge and added a try/except statement to the solution.
+**Link to work**: [Github](days/33)
