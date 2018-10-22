@@ -1,0 +1,1 @@
+A script from the book "Automate the Boring Stuff" that uses openpyxl to manipulate excel files.

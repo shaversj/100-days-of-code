@@ -247,5 +247,11 @@ The method count() returns count of how many times obj occurs in list.
 ### Day 34: October 21, 2018
 
 **Today's Focus**: 
-* Completed a coderbyte challenge.
+* Completed 2 code challenges on coderbyte.
   
+----
+### Day 35: October 22, 2018
+
+**Today's Focus**: I learned how to read and manipulate excel files by using openpyxl. I read and used a script from "Automate the Boring Stuff" to reinforce what I had learned from reading online.
+
+**Link to work**: [Github](days/35)
