@@ -255,3 +255,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: I learned how to read and manipulate excel files by using openpyxl. I read and used a script from "Automate the Boring Stuff" to reinforce what I had learned from reading online.
 
 **Link to work**: [Github](days/35)
+
+----
+### Day 36: October 23, 2018
+
+**Today's Focus**: Played around with [gspread](https://github.com/burnash/gspread), which is a Python library that gives you the ability to interact with the Google Sheets API.
+
+**Link to work**: [Github](days/36)
