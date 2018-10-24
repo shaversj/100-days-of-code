@@ -262,3 +262,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Played around with [gspread](https://github.com/burnash/gspread), which is a Python library that gives you the ability to interact with the Google Sheets API.
 
 **Link to work**: [Github](days/36)
+
+----
+### Day 37: October 24, 2018
+
+**Today's Focus**: I added two new functions to my project that is using gspread to interact with the google sheets api. One of the functions required me to create a dictionary with a list as the value. I also used calender module from the standard library for the first time.
+
+**Link to work**: [Github](days/36)

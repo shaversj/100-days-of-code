@@ -1,7 +1,9 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import config
+import calendar
 
+month_dict = {}
 
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
@@ -24,6 +26,7 @@ cell2 = wks.sheet1.findall("d")
 cell3 = wks.sheet1.findall("January")
 cell4 = wks.sheet1.findall("e")
 print(cell)
+print(wks.sheet1.cell(4, 3).value == '')
 print(cell2)
 print(cell3)
 print(cell4)
@@ -78,6 +81,46 @@ def apply_payment(month: str, amount: float):
 def retrieve_amount_due():
     pass
 
+
+def spreadsheet_mapper():
+    """
+    Builds a dictionary using the Month as key and the column numbers associated with the date and payment values.
+
+    {'January': [1, 2]}
+
+    1 = Column #1 of spreadsheet
+    2 = Column #2 of spreadsheet
+
+    Retrieve values by using: month_dict['January'][0]
+
+    >>> print(month_dict)
+    {'January': [1, 2], 'February': [3, 4], 'March': [5, 6], 'April': [7, 8], 'May': [9, 10], 'June': [11, 12], 'July': [13, 14], 'August': [15, 16], 'September': [17, 18], 'October': [19, 20], 'November': [21, 22], 'December': [23, 24]}
+    >>> month_dict['January'][0]
+    1
+    >>> month_dict['November'][1]
+    22
+    """
+
+    date_column = 1
+    payment_column = 2
+
+    for month in calendar.month_name[1:]:
+        month_dict[month] = [date_column]
+        month_dict[month].append(payment_column)
+        date_column += 2
+        payment_column += 2
+
+
+def find_empty_fields(month: str):
+
+    for x in range(1, 6):
+        if wks.sheet1.cell(x, month_dict[month][0]).value == '' and wks.sheet1.cell(x, month_dict[month][1]).value == '':
+            date_cell = wks.sheet1.cell(x, month_dict[month][0])
+            payment_cell = wks.sheet1.cell(x, month_dict[month][1])
+
+            return date_cell, payment_cell
+        else:
+            continue
 
 # if __name__ == "__main__":
 #    load_google_sheet()
