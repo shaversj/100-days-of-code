@@ -111,7 +111,7 @@ def spreadsheet_mapper():
         payment_column += 2
 
 
-def find_empty_fields(month: str):
+def find_empty_cell(month: str):
 
     for x in range(1, 6):
         if wks.sheet1.cell(x, month_dict[month][0]).value == '' and wks.sheet1.cell(x, month_dict[month][1]).value == '':
