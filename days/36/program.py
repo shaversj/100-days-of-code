@@ -57,7 +57,7 @@ def load_google_sheet():
     pass
 
 
-def apply_payment(month: str, amount: float):
+def apply_payment(date_cell_location, payment_cell_location, payment_amount: float):
     """
     Applies payment to google spreadsheet
 
@@ -72,10 +72,10 @@ def apply_payment(month: str, amount: float):
     wks.sheet1.update_acell('A4', '=TODAY()')
     """
 
-    # if month == 'January':
-    #    date_cell = cell.
-
-    pass
+    wks.sheet1.update_cell(date_cell_location.row,
+                           date_cell_location.col, '=TODAY()')
+    wks.sheet1.update_cell(
+        payment_cell_location.row, payment_cell_location.col, -(payment_amount))
 
 
 def retrieve_amount_due():
@@ -115,10 +115,10 @@ def find_empty_fields(month: str):
 
     for x in range(1, 6):
         if wks.sheet1.cell(x, month_dict[month][0]).value == '' and wks.sheet1.cell(x, month_dict[month][1]).value == '':
-            date_cell = wks.sheet1.cell(x, month_dict[month][0])
-            payment_cell = wks.sheet1.cell(x, month_dict[month][1])
+            date_cell_location = wks.sheet1.cell(x, month_dict[month][0])
+            payment_cell_location = wks.sheet1.cell(x, month_dict[month][1])
 
-            return date_cell, payment_cell
+            return date_cell_location, payment_cell_location
         else:
             continue
 
