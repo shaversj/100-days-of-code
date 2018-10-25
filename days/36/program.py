@@ -15,67 +15,36 @@ gc = gspread.authorize(credentials)
 
 wks = gc.open_by_key(config.spreadsheet_key)
 
-#wks.sheet1.update_acell('A3', str(datetime.date.today()))
-wks.sheet1.update_acell('A5', '=TODAY()')
-wks.sheet1.update_acell('B5', '-250')
-list_of_lists = wks.sheet1.get_all_values()
-
-# Find a cell with exact string value
-cell = wks.sheet1.findall("a")
-cell2 = wks.sheet1.findall("d")
-cell3 = wks.sheet1.findall("January")
-cell4 = wks.sheet1.findall("e")
-print(cell)
-print(wks.sheet1.cell(4, 3).value == '')
-print(cell2)
-print(cell3)
-print(cell4)
-#print("Found something at R%sC%s" % (cell.row, cell.col))
-#print("Found something at R%sC%s" % (cell2.row, cell2.col))
-# print(list_of_lists)
-
 
 def main():
     """
     Provide list of questions for the user.
-
-    What do you want to do?
-    1. Apply Payment
-        Input the following:
-                            Date when received payment:
-                            Amount of payment:         
-    2. Retrieve Amount Due
-    3. Notify Renter of Amount Due.
-
-    """
-    pass
-
-
-def load_google_sheet():
-
-    # return sheet
-    pass
-
-
-def apply_payment(date_cell_location, payment_cell_location, payment_amount: float):
-    """
-    Applies payment to google spreadsheet
-
-    Each cell has a value and coordinates properties.
-    value = cell.value
-    row_number = cell.row
-    column_number = cell.col
-
-    #insert on the next available row
-    date_today=str(datetime.date.today())
-    TODAY() Google Sheets Function returns the current date.
-    wks.sheet1.update_acell('A4', '=TODAY()')
     """
 
-    wks.sheet1.update_cell(date_cell_location.row,
-                           date_cell_location.col, '=TODAY()')
-    wks.sheet1.update_cell(
-        payment_cell_location.row, payment_cell_location.col, -(payment_amount))
+    payment_amount = int(input('Enter payment amount (ex. 750): '""))
+    month = input(
+        'Enter the month the payment should be applied to (ex. March): '"")
+
+    spreadsheet_mapper()
+    date_cell_location, payment_cell_location = find_empty_cell(month)
+    apply_payment(payment_amount, date_cell_location, payment_cell_location)
+
+
+def apply_payment(payment_amount: float, date_cell_location, payment_cell_location):
+    """
+    Applies date and payment amount to google spreadsheet
+
+    """
+
+    try:
+        wks.sheet1.update_cell(date_cell_location.row,
+                               date_cell_location.col, '=TODAY()') and wks.sheet1.update_cell(
+            payment_cell_location.row, payment_cell_location.col, -(payment_amount))
+    except gspread.exceptions.GSpreadException as e:
+        print(e)
+        print('Your update was not successful. Please try again.')
+    else:
+        print('Your payment was successfully applied to the spreadsheet!')
 
 
 def retrieve_amount_due():
@@ -94,7 +63,8 @@ def spreadsheet_mapper():
     Retrieve values by using: month_dict['January'][0]
 
     >>> print(month_dict)
-    {'January': [1, 2], 'February': [3, 4], 'March': [5, 6], 'April': [7, 8], 'May': [9, 10], 'June': [11, 12], 'July': [13, 14], 'August': [15, 16], 'September': [17, 18], 'October': [19, 20], 'November': [21, 22], 'December': [23, 24]}
+    {'January': [1, 2], 'February': [3, 4], 'March': [5, 6], 'April': [7, 8], 'May': [9, 10], 'June': [11, 12], 'July': [
+        13, 14], 'August': [15, 16], 'September': [17, 18], 'October': [19, 20], 'November': [21, 22], 'December': [23, 24]}
     >>> month_dict['January'][0]
     1
     >>> month_dict['November'][1]
@@ -112,6 +82,9 @@ def spreadsheet_mapper():
 
 
 def find_empty_cell(month: str):
+    """
+    Find the first empty cell in the column that is associated with the given month.
+    """
 
     for x in range(1, 6):
         if wks.sheet1.cell(x, month_dict[month][0]).value == '' and wks.sheet1.cell(x, month_dict[month][1]).value == '':
@@ -122,5 +95,6 @@ def find_empty_cell(month: str):
         else:
             continue
 
-# if __name__ == "__main__":
-#    load_google_sheet()
+
+if __name__ == "__main__":
+    main()
