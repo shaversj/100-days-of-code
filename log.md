@@ -276,3 +276,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Updated the main() section of my gspread project. I got more practice with functions and try/except statements.
 
 **Link to work**: [Github](days/36)
+
+----
+### Day 39: October 26, 2018
+
+**Today's Focus**: I learned a lot today by playing with Flask, Twilio, Zappa and Python. Zappa is very easy to use and allows you to push web based applications to AWS using by using a combination of AWS Lambda and AWS API Gateway. I setup Twilio to call the URL that Zappa provides to you after it finishes deploying your resources.
+
+**Link to work**: [Github](days/39)
