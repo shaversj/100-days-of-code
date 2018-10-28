@@ -290,3 +290,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: I used Plotly and Mapbox to create a scatterplot of addresses.
 
 **Link to work**: [Github](days/40)
+
+----
+### Day 41: October 28, 2018
+
+**Today's Focus**: I used textblob to parse an article from CNN. TextBlob is a library for natural language processing, or NLP. I retrieved noun phrases and perform sentiment anlaysis on the txt.
+
+**Link to work**: [Github](days/41)
