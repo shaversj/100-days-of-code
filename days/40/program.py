@@ -1,23 +1,18 @@
-import os
 import config
 import plotly
 import bs4
 import requests
-os.environ["GOOGLE_API_KEY"] = config.api_key
 import geocoder
 
 results = []
 latitude = []
 longitude = []
 
-URL = 'https://sheriff.co.delaware.oh.us/sheriff-sales/'
-
-plotly.tools.set_credentials_file(
-    username=config.plotly_username, api_key=config.plotly_apikey)
-mapbox_access_token = config.map_token
-
 
 def pull_site():
+
+    URL = 'https://sheriff.co.delaware.oh.us/sheriff-sales/'
+
     try:
         raw_site_page = requests.get(URL)
     except requests.exceptions.RequestException as e:
@@ -41,10 +36,10 @@ def scrape_website(site):
 
 
 def add_geocode_addresses():
+    """Retrieve latitude and longitude for all scraped addresses."""
 
     for address in results:
-
-        g = geocoder.google(str(address[1]))
+        g = geocoder.google(str(address[1]), key=config.api_key)
         latitude.append(g.latlng[0])
         longitude.append(g.latlng[1])
 
@@ -52,6 +47,11 @@ def add_geocode_addresses():
 
 
 def plot_map():
+
+    plotly.tools.set_credentials_file(
+        username=config.plotly_username, api_key=config.plotly_apikey)
+
+    mapbox_access_token = config.map_token
 
     data = [
         plotly.graph_objs.Scattermapbox(
