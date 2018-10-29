@@ -297,3 +297,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: I used textblob to parse an article from CNN. TextBlob is a library for natural language processing, or NLP. I retrieved noun phrases and perform sentiment anlaysis on the txt.
 
 **Link to work**: [Github](days/41)
+
+----
+### Day 42: October 29, 2018
+
+**Today's Focus**: Created a new repository and created documentation for my web scraping project.
+
+**Link to work**: [Github](sheriff-sale-web-scraper)
