@@ -304,3 +304,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Created a new repository and created documentation for my web scraping project.
 
 **Link to work**: [Github](sheriff-sale-web-scraper)
+
+----
+### Day 43: October 30, 2018
+
+**Today's Focus**: I walked through a few tutorials for the argparse module, which is the recommended command-line parsing module in the Python standard library. I was surprised how easy argparse made it to create a cli program.
+
+**Link to work**: [Github](days/43)
