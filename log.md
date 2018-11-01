@@ -318,3 +318,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: I used argparse and shutil to create a CLI program that copies a file from a source to a destination directory.
 
 **Link to work**: [Github](days/44)
+
+----
+### Day 45: November 1, 2018
+
+**Today's Focus**: Explored additional use cases with shutil. I updated my cp cli script to be able to copy folders as well as files.
+
+**Link to work**: [Github](days/44)
