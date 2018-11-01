@@ -311,3 +311,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: I walked through a few tutorials for the argparse module, which is the recommended command-line parsing module in the Python standard library. I was surprised how easy argparse made it to create a cli program.
 
 **Link to work**: [Github](days/43)
+
+----
+### Day 44: October 31, 2018
+
+**Today's Focus**: I used argparse and shutil to create a CLI program that copies a file from a source to a destination directory.
+
+**Link to work**: [Github](days/44)
