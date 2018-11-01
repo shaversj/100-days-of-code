@@ -9,6 +9,8 @@ def copy(src, dst):
     # shutil.copyfile will throw an IsADirectoryError if src is a directory instead of a file.
     except IsADirectoryError:
         shutil.copytree(src, dst)
+    except Exception as e:
+        print(f'The following error occured: {e}')
 
 
 if __name__ == "__main__":
