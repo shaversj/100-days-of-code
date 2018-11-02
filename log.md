@@ -325,3 +325,12 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Explored additional use cases with shutil. I updated my cp cli script to be able to copy folders as well as files.
 
 **Link to work**: [Github](days/44)
+
+----
+### Day 46: November 2, 2018
+
+**Today's Focus**: Played around with tutorials and code that described the difference between linear search and binary search.
+* Time Complexity of Linear Search is O(n), where n is the number of elements in the list.
+* Time Complexity of Binary Search is O(log n).
+
+**Link to work**: [Github](days/46)
