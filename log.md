@@ -334,3 +334,10 @@ The method count() returns count of how many times obj occurs in list.
 * Time Complexity of Binary Search is O(log n).
 
 **Link to work**: [Github](days/46)
+
+----
+### Day 47: November 3, 2018
+
+**Today's Focus**: Worked through a tutorial that allowed me to use Python, IFTT, and Telgram. 
+
+**Link to work**: [Github](days/47)
