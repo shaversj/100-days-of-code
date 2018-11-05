@@ -343,8 +343,13 @@ The method count() returns count of how many times obj occurs in list.
 **Link to work**: [Github](days/47)
 
 ----
-### Day 48: November 3, 2018
+### Day 48: November 4, 2018
 
 **Today's Focus**: Played with a few different libraries that give you the ability to easily print data into a table. I settled on a library called tabulate. It was easy to use, and gave me the ability to print from a iterable. 
 
-**Link to work**: [Github](days/47)
+**Link to work**: [Github](days/48)
+
+----
+### Day 49: November 5, 2018
+
+**Today's Focus**: Completed two challenges on Coderbyte.
