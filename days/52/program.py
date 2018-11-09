@@ -16,17 +16,24 @@ def main():
     soup = list(secret_word)
     print(list(soup))
 
-    while True:
+    x = 6
+    while x != 0:
         print()
         print(correct_guess_set)
         print(incorrect_guess_set)
+        print(f'You have {x} guesses left!')
+
         guess = input('Guess your letter: '"")
         guess = guess.upper()
 
-        if secret_word.find(guess) != -1:
+        if guess in correct_guess_set or guess in incorrect_guess_set:
+            print()
+            print('You already picked that letter. Please try again.')
+            print()
+            x += 1
+        elif secret_word.find(guess) != -1:
             correct_guess_set.add(guess)
-        else:
-            incorrect_guess_set.add(guess)
+        elif incorrect_guess_set.add(guess):
             print('Not found. Please try again!')
 
         for char in secret_word:
@@ -39,8 +46,14 @@ def main():
             print()
             print(
                 f'You guessed all of the letters! The correct word is {secret_word}')
-            break
+            answer = input('Do you want to play again? (Yes or No) '"")
+            answer = answer.lower()
+            if answer == 'Yes':
+                correct_guess_set.clear()
+                incorrect_guess_set.clear()
+                main()
         else:
+            x -= 1
             continue
 
 

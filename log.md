@@ -365,3 +365,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: I started to work on creating a hangman game using Python.
 
 **Link to work**: [Github](days/52)
+
+----
+### Day 53: November 9, 2018
+
+**Today's Focus**: Continued to work on hangman game.
+
+**Link to work**: [Github](days/52)
