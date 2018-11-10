@@ -372,3 +372,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Continued to work on hangman game.
 
 **Link to work**: [Github](days/52)
+
+----
+### Day 54: November 10, 2018
+
+**Today's Focus**: Worked through a tutorial that used Pygal to create a bar chart.
+
+**Link to work**: [Github](days/54)
