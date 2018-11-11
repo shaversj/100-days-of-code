@@ -379,3 +379,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Worked through a tutorial that used Pygal to create a bar chart.
 
 **Link to work**: [Github](days/54)
+
+----
+### Day 55: November 11, 2018
+
+**Today's Focus**: Walked through a few tutorials in my Learning Python book. I learned how default, keyword, and keyword-only arguments are used in Python functions.
+
+**Link to work**: [Github](days/55)
