@@ -386,3 +386,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Walked through a few tutorials in my Learning Python book. I learned how default, keyword, and keyword-only arguments are used in Python functions.
 
 **Link to work**: [Github](days/55)
+
+----
+### Day 56: November 12, 2018
+
+**Today's Focus**: Played around with a data set that I received from data.gov. I used csv.DictReader to read the data.
+
+**Link to work**: [Github](days/56)
