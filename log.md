@@ -400,3 +400,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Refactored some of the code associated with the data set that I received from data.gov. Doing so allowed me to practice list comprehensions.
 
 **Link to work**: [Github](days/57)
+
+----
+### Day 58: November 14, 2018
+
+**Today's Focus**: Played around with Flask-Restful.
+
+**Link to work**: [Github](days/58)
