@@ -407,3 +407,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Played around with Flask-Restful.
 
 **Link to work**: [Github](days/58)
+
+----
+### Day 59: November 15, 2018
+
+**Today's Focus**: Played around with jsonify and updated the API to build a dictionary that gets added to the list. jsonify is then used to return the list that contains the dictionary. I was also able to figure out how to parse parameters to Flask when calling the API.
+
+**Link to work**: [Github](days/58)

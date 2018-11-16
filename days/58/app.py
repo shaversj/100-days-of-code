@@ -1,8 +1,9 @@
 import csv
 import collections
 from flask import Flask
-from flask_restful import Resource, Api
-import json
+from flask_restful import Api
+from flask import jsonify
+from flask import request
 
 app = Flask(__name__)
 api = Api(app)
@@ -19,19 +20,28 @@ Record = collections.namedtuple(
     top_10(2015, 'M') """
 
 
-@app.route("/")
+@app.route("/top10")
 def top_10():
 
-    # new_data = return_by_year_sex(2017, 'M')
-    new_data = return_by_year_sex(2017, 'M')
+    # http://127.0.0.1:5000/top10?Year=2017&Sex=F
+    year = request.args.get('Year', default=1, type=int)
+    sex = request.args.get('Sex', default=1, type=str)
+    new_data = return_by_year_sex(year, sex)
 
-    top_10 = [(k, name[3])
-              for (k, name) in enumerate(new_data[:10], 1)]
+    parsed = []
+    for k, name in enumerate(new_data[:10], 1):
+        State, Sex, Year, Name, Occurance = name
+        dic = {
+            'Name': Name,
+            'Rank': k,
+            'Sex': Sex,
+            'Births': Occurance,
+            'Year': Year
 
-    #response = json.dumps(top_10)
-    # for item in top_10:
-    #    print(*item)
-    return str(top_10)
+        }
+        parsed.append(dic)
+
+    return jsonify(parsed)
 
 
 def return_by_year_sex(year, sex):
