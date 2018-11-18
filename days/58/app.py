@@ -13,7 +13,6 @@ data = []
 Record = collections.namedtuple(
     'Record', "State, Sex, Year, Name, Occurance")
 
-
 """ def main():
     init()
 
