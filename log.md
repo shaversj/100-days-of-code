@@ -426,3 +426,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Created a simple calculator with Python.
 
 **Link to work**: [Github](days/61)
+
+----
+### Day 62: November 19, 2018
+
+**Today's Focus**: Played around with recursive functions.
+
+**Link to work**: [Github](days/62)
