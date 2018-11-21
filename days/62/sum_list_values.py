@@ -34,6 +34,7 @@ def sum_list_v3(a):
     return answer
 
 
+
 def sum_list_v4(a):
 
     if type(a) != list:
