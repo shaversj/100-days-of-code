@@ -433,3 +433,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Played around with recursive functions.
 
 **Link to work**: [Github](days/62)
+
+----
+### Day 63: November 21, 2018
+
+**Today's Focus**: Played around with Qt for Python.
+
+**Link to work**: [Github](days/63)
