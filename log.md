@@ -440,3 +440,10 @@ The method count() returns count of how many times obj occurs in list.
 **Today's Focus**: Played around with Qt for Python.
 
 **Link to work**: [Github](days/63)
+
+----
+### Day 64: November 23, 2018
+
+**Today's Focus**: Read about Classes and Class inheritance. I created 3 classes to simulate the transactions associated with a banking application.
+
+**Link to work**: [Github](days/64)
