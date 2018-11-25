@@ -452,3 +452,8 @@ The method count() returns count of how many times obj occurs in list.
 ### Day 65: November 24, 2018
 
 **Today's Focus**: Completed 3 coding challenges on HackerRank.
+
+----
+### Day 66: November 25, 2018
+
+**Today's Focus**: I worked on a coding challenge from Pybit.es. I pulled tweets using Tweepy. I created a Class and several methods to parse the data. I learned how adding __len__ and __getitem__ gives me the ability to slice and iterate over the data.
