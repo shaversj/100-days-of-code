@@ -472,3 +472,12 @@ The method count() returns count of how many times obj occurs in list.
 ### Day 69: November 28, 2018
 
 **Today's Focus**: Completed a coding challenge on Hackerank.
+
+----
+### Day 70: November 29, 2018
+
+**Today's Focus**: Walked through a few tutorials related to Dash. I learned that Dash apps are composed two parts. The first part is the "layout" of the app and it describes what the application looks like. The second part describes the interactivity of the application.
+
+* The following components are used to determine what the graph will look like:
+    *  [dash_core_components](https://dash.plot.ly/dash-core-components)
+    *  [dash_html_components](https://dash.plot.ly/dash-html-components)
