@@ -467,3 +467,8 @@ The method count() returns count of how many times obj occurs in list.
 ### Day 68: November 27, 2018
 
 **Today's Focus**: Used Dataclasses and dataclass-csv to parse data from a csv. Using dataclasses and dataclass-csv is a lot easier than using named tuples to describe the data that is in a csv.
+
+----
+### Day 69: November 28, 2018
+
+**Today's Focus**: Completed a coding challenge on Hackerank.
