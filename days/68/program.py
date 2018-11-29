@@ -33,3 +33,7 @@ def top_20_names(year: int, sex: str):
 
 
 top_20_names(2017, 'M')
+
+# Testing for Dash Dashboard. Plan on using the data below for a dashboard
+""" years = {year.year for year in data}
+print(years) """
