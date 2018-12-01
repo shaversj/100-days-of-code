@@ -458,6 +458,8 @@ The method count() returns count of how many times obj occurs in list.
 
 **Today's Focus**: I worked on a coding challenge from Pybit.es. I pulled tweets using Tweepy. I created a Class and several methods to parse the data. I learned how adding __len__ and __getitem__ gives me the ability to slice and iterate over the data.
 
+**Link to work**: [Github](days/66)
+
 ----
 ### Day 67: November 26, 2018
 
@@ -467,6 +469,8 @@ The method count() returns count of how many times obj occurs in list.
 ### Day 68: November 27, 2018
 
 **Today's Focus**: Used Dataclasses and dataclass-csv to parse data from a csv. Using dataclasses and dataclass-csv is a lot easier than using named tuples to describe the data that is in a csv.
+
+**Link to work**: [Github](days/68)
 
 ----
 ### Day 69: November 28, 2018
@@ -481,3 +485,12 @@ The method count() returns count of how many times obj occurs in list.
 * The following components are used to determine what the graph will look like:
     *  [dash_core_components](https://dash.plot.ly/dash-core-components)
     *  [dash_html_components](https://dash.plot.ly/dash-html-components)
+
+**Link to work**: [Github](days/70)
+
+----
+### Day 72: December 1, 2018
+
+**Today's Focus**: I completed a coding challenge from Pybit.es. I learned how to use pyperclip to copy contents from my clipboard.
+
+**Link to work**: [Github](days/72)
