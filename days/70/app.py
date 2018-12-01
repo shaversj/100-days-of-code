@@ -35,6 +35,7 @@ app.layout = html.Div([
         ],
             style={'width': '49%', 'display': 'inline-block'}),
 
+        
         html.Div([
             dcc.Dropdown(
                 id='crossfilter-yaxis-column',
