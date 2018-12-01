@@ -493,4 +493,6 @@ The method count() returns count of how many times obj occurs in list.
 
 **Today's Focus**: I completed a coding challenge from Pybit.es. I learned how to use pyperclip to copy contents from my clipboard.
 
+https://pybit.es/codechallenge54.html
+
 **Link to work**: [Github](days/72)
