@@ -496,3 +496,10 @@ The method count() returns count of how many times obj occurs in list.
 https://pybit.es/codechallenge54.html
 
 **Link to work**: [Github](days/72)
+
+----
+### Day 73: December 2, 2018
+
+**Today's Focus**: Played around with ipdb, which is a Python Debugger. I used it to troubleshoot an issue I was having with a library that I was using.
+
+**Link to work**: [Github](days/68)

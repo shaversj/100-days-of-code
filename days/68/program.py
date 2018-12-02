@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from dataclass_csv import DataclassReader
+#import ipdb
 
 data = []
 
@@ -13,9 +14,11 @@ class PopularNames:
     occurance: int
 
 
+# ipdb.set_trace()
 with open('OH.TXT') as f:
-    fieldnames = 'state', 'sex', 'year', 'name', 'occurance'
-    reader = DataclassReader(f, PopularNames, fieldnames=fieldnames)
+    #fieldnames = 'state', 'sex', 'year', 'name', 'occurance'
+    #reader = DataclassReader(f, PopularNames, fieldnames=fieldnames)
+    reader = DataclassReader(f, PopularNames)
     for row in reader:
         data.append(row)
 
