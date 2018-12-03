@@ -503,3 +503,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: Played around with ipdb, which is a Python Debugger. I used it to troubleshoot an issue I was having with a library that I was using.
 
 **Link to work**: [Github](days/68)
+
+----
+### Day 74 December 3, 2018
+
+**Today's Focus**: I used Python classes to begin creating a Rock, Paper Scissors game. I plan to complete the program over the next 2 days.
+
+**Link to work**: [Github](days/74)
