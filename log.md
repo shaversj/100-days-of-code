@@ -510,3 +510,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: I used Python classes to begin creating a Rock, Paper Scissors game. I plan to complete the program over the next 2 days.
 
 **Link to work**: [Github](days/74)
+
+----
+### Day 75 December 4, 2018
+
+**Today's Focus**: Used Python dataclasses to create the classes for my Rock, Paper Scissor game. Learned how to use dataclass.field to to retrieve a value from a function that resides outside of the class. 
+
+**Link to work**: [Github](days/74)
