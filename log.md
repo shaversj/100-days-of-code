@@ -517,3 +517,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: Used Python dataclasses to create the classes for my Rock, Paper Scissor game. Learned how to use dataclass.field to to retrieve a value from a function that resides outside of the class. 
 
 **Link to work**: [Github](days/74)
+
+----
+### Day 76 December 6, 2018
+
+**Today's Focus**: Created a program that reads all of the data associated with 52 csv files and writes the data into one file. First time using the append 'a' keyword arguement with the open command.
+
+**Link to work**: [Github](days/76)
