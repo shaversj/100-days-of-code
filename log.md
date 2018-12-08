@@ -524,3 +524,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: Created a program that reads all of the data associated with 52 csv files and writes the data into one file. First time using the append 'a' keyword arguement with the open command.
 
 **Link to work**: [Github](days/76)
+
+----
+### Day 77 December 7, 2018
+
+**Today's Focus**: Through testing, I learned that my script would throw a UnicodeDecodeError when it encountered bad data, so I added a try/except statement to catch, print and pass the error. 
+
+**Link to work**: [Github](days/76)

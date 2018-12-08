@@ -17,10 +17,19 @@ def get_file_names(data_folder):
 
 
 def read_file(filename: str):
-    with open(filename) as txt_file:
-        reader = csv.reader(txt_file)
-        for line in reader:
-            write_file(line)
+    try:
+
+        with open(filename, 'rt', encoding="ascii") as txt_file:
+            # Specified encoding to avoid error below.
+            # UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 3131: invalid start byte
+
+            reader = csv.reader(txt_file)
+            for line in reader:
+                write_file(line)
+
+    except UnicodeDecodeError as error:
+        print(error)
+        pass
 
 
 def write_file(line: list):
