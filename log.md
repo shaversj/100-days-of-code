@@ -531,3 +531,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: Through testing, I learned that my script would throw a UnicodeDecodeError when it encountered bad data, so I added a try/except statement to catch, print and pass the error. 
 
 **Link to work**: [Github](days/76)
+
+----
+### Day 78 December 8, 2018
+
+**Today's Focus**: Learned how to parse an excel-tabulated txt file with Python. 
+
+**Link to work**: [Github](days/78)
