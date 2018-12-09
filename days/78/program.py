@@ -49,5 +49,6 @@ max_mpg = find_max_mpg()
 min_mpg = find_min_mpg()
 print(top_5_models(max_mpg))
 print(find_max_mpg())
+
 print()
 print(find_min_mpg())
