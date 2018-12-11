@@ -538,3 +538,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: Learned how to parse an excel-tabulated txt file with Python. 
 
 **Link to work**: [Github](days/78)
+
+----
+### Day 79 December 10, 2018
+
+**Today's Focus**: I started on a project that will result in the creation of an API Wrapper for the [International Space Station API](http://api.open-notify.org)
+
+**Link to work**: [Github](days/79)
