@@ -3,17 +3,11 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Space:
-
-    base_url: str = 'http://api.open-notify.org/'
-
-
-@dataclass
-class People():
+class ISS():
 
     api_url: str = 'http://api.open-notify.org/astros.json'
 
-    def number_of_people_in_space(self):
+    def count_people(self):
         """Returns the current number of people in space. """
 
         r = requests.get(self.api_url)
@@ -23,9 +17,15 @@ class People():
 
         return total_number_in_space
 
-    def who_is_in_space():
+    def lookup_names(self):
         """Returns the names of the people in space. """
-        pass
+
+        r = requests.get(self.api_url)
+        response = r.json()
+
+        list_of_people = [item.get('name') for item in response['people']]
+
+        return '\n'.join(list_of_people)
 
 
 class Location():

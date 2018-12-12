@@ -1,5 +1,10 @@
-from iss import People
+from iss import ISS
 
-test = People()
+test = ISS()
 
-print(test.number_of_people_in_space())
+print()
+print(f'There are {test.count_people()} people in space right now!')
+print()
+print('The following people are in space:')
+print(f'{test.lookup_names()}')
+print()
