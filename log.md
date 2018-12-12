@@ -552,3 +552,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: Added an additional method to my API Wrapper project.
 
 **Link to work**: [Github](days/79)
+
+----
+### Day 81 December 12, 2018
+
+**Today's Focus**: Continued making updates to my API Wrapper project. I added an additional method and also learned how to manipulate instance variables when using dataclasses (__post_init__).
+
+**Link to work**: [Github](days/79)
