@@ -73,5 +73,9 @@ class ISS():
         return timestamp
 
 
-class Pass_Time():
-    pass
+@dataclass
+class PassTime():
+    latitude: float
+    longitude: float
+    altitude: float = None
+    number: float = 5
