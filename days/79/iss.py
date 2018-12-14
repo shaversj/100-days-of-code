@@ -1,6 +1,7 @@
 import requests
 from dataclasses import dataclass, field
 import time
+import json
 
 
 @dataclass
@@ -75,7 +76,34 @@ class ISS():
 
 @dataclass
 class PassTime():
-    latitude: float
-    longitude: float
-    altitude: float = None
-    number: float = 5
+    lat: float
+    lon: float
+    alt: float = None
+    num: float = 5
+    pass_time: list = None
+
+    #lat = 40.2987
+    #lon = 83.0677
+
+    def __post_init__(self):
+        self.pass_time = PassTime.getPassTime(self)
+
+    def getPassTime(self):
+
+        data = []
+        pass_time_url = 'http://api.open-notify.org/iss-pass.json?lat={lat}&lon={lon}'.format(
+            lat=self.lat, lon=self.lon)
+
+        r = requests.get(pass_time_url)
+        response = r.json()
+
+        for x in response['response']:
+            for k, v in x.items():
+                if k == 'risetime':
+                    x[k] = time.ctime(int(v))
+
+        for x in response['response']:
+            new_dict = {k: v for k, v in x.items()}
+            data.append(new_dict)
+
+        return json.dumps(data, indent=2)

@@ -566,3 +566,10 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: I added an additional Class to my API Wrapper project.
 
 **Link to work**: [Github](days/79)
+
+----
+### Day 83 December 14, 2018
+
+**Today's Focus**: I added an additional method to my API Wrapper project.
+
+**Link to work**: [Github](days/79)
