@@ -38,5 +38,6 @@ def write_file(line: list):
         writer.writerow(line)
 
 
+        
 if __name__ == '__main__':
     main()
