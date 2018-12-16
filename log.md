@@ -582,3 +582,10 @@ https://pybit.es/codechallenge54.html
 If a class variable contains a default value, all variables after that must comtain a default value. 
 
 **Link to work**: [Github](days/79)
+
+----
+### Day 85 December 16, 2018
+
+**Today's Focus**: I'm working on a project from the Building Restful Python Web Services book. The project will give me the opportunity to learn how to build REST services using Flask-RESTful.
+
+**Link to work**: [Github](days/85)
