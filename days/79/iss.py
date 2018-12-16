@@ -75,9 +75,9 @@ class ISS():
 
 
 @dataclass
-class PassTime():
-    lat: float
-    lon: float
+class PassTime(ISS):
+    lat: float = None
+    lon: float = None
     alt: float = None
     num: float = 5
     pass_time: list = None
@@ -85,8 +85,9 @@ class PassTime():
     #lat = 40.2987
     #lon = 83.0677
 
-    def __post_init__(self):
-        self.pass_time = PassTime.getPassTime(self)
+    # def __post_init__(self):
+
+    #self.pass_time = PassTime.getPassTime(self)
 
     def getPassTime(self):
 

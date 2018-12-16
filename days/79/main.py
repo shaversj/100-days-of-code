@@ -18,6 +18,6 @@ print()
 print(f'Timestamp: {test.timestamp}')
 
 print()
-print()
+print({jack.people})
 
 print(jack.pass_time)

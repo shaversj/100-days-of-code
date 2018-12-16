@@ -573,3 +573,12 @@ https://pybit.es/codechallenge54.html
 **Today's Focus**: I added an additional method to my API Wrapper project.
 
 **Link to work**: [Github](days/79)
+
+----
+### Day 84 December 15, 2018
+
+**Today's Focus**: Learned how to correctly have a child dataclass inherit from a parent dataclass. When you have multiple classes trying to inherit from one another, you need to pay attention to which variables contain default values. 
+
+If a class variable contains a default value, all variables after that must comtain a default value. 
+
+**Link to work**: [Github](days/79)
