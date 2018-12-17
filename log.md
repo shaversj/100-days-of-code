@@ -589,3 +589,13 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: I'm working on a project from the Building Restful Python Web Services book. The project will give me the opportunity to learn how to build REST services using Flask-RESTful.
 
 **Link to work**: [Github](days/85)
+
+----
+### Day 86 December 17, 2018
+
+**Today's Focus**: Completed the Chapter 5 project from the Building Restful Python Web Services book. I learned how to create a CRUD API using Flask-RESTful. 
+* Created a model to represent and persist messages
+* Learned to configure serialization of messages into JSON representations
+* Wrote classes that represent resources and process the different HTTP requests
+
+**Link to work**: [Github](days/85)
