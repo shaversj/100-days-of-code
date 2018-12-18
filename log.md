@@ -599,3 +599,11 @@ If a class variable contains a default value, all variables after that must comt
 * Wrote classes that represent resources and process the different HTTP requests
 
 **Link to work**: [Github](days/85)
+
+----
+### Day 87 December 18, 2018
+
+**Today's Focus**: Learned how to use a more modern stack (flask-rest-api, marshmellow, webargs) to create a REST API.
+* Using webargs and marshmellow reduced the amount of code that needed to be written.
+* First time using a blueprint in Flask 
+  
