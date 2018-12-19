@@ -607,3 +607,7 @@ If a class variable contains a default value, all variables after that must comt
 * Using webargs and marshmellow reduced the amount of code that needed to be written.
 * First time using a blueprint in Flask 
   
+----
+### Day 88 December 19, 2018
+
+**Today's Focus**: Completd a coding challenge on HackeRank.
