@@ -606,8 +606,18 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: Learned how to use a more modern stack (flask-rest-api, marshmellow, webargs) to create a REST API.
 * Using webargs and marshmellow reduced the amount of code that needed to be written.
 * First time using a blueprint in Flask 
-  
+
+**Link to work**: [Github](days/87)
+
 ----
 ### Day 88 December 19, 2018
 
 **Today's Focus**: Completd a coding challenge on HackeRank.
+
+----
+### Day 89 December 20, 2018
+
+**Today's Focus**: Played around with Python Marshmallow. I created a schema with Marshmallow and used it to validate data before an object gets created.
+
+----
+**Link to work**: [Github](days/89)
