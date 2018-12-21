@@ -621,3 +621,9 @@ If a class variable contains a default value, all variables after that must comt
 
 ----
 **Link to work**: [Github](days/89)
+
+----
+### Day 90 December 21, 2018
+
+**Today's Focus**: Completed a coding challenge on [Project Euler](https://projecteuler.net/)
+
