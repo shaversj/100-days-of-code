@@ -24,6 +24,7 @@ class PersonSchema(Schema):
         return Person(**info)
 
 
+
 my_data = [{"name": 'Benjamin Franklin', "birthday": '01/17/1706'},
            {"name": 'George Washington', "birthday": '02/22/1732'}]
 
