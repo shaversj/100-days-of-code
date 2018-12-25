@@ -40,7 +40,6 @@ class Currency:
 
         return Currency(new_amount, self.code)
 
-        pass
 
     def __str__(self):
         """Return the amount and type as a string"""
