@@ -638,3 +638,8 @@ If a class variable contains a default value, all variables after that must comt
 ### Day 92 December 25, 2018
 
 **Today's Focus**: Completd a coding challenge on Project Euler.
+
+----
+### Day 93: December 26, 2018
+
+**Today's Focus**: Completed a coding challenge from [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/05_ListsTuples/Equity/proj05.pdf)
