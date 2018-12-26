@@ -634,6 +634,7 @@ If a class variable contains a default value, all variables after that must comt
 * Learned about the differences and how to modify the __add__ and  __radd__ class methods.
 
 **Link to work**: [Github](days/91)
+
 ----
 ### Day 92 December 25, 2018
 
