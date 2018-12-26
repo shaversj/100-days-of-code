@@ -619,7 +619,6 @@ If a class variable contains a default value, all variables after that must comt
 
 **Today's Focus**: Played around with Python Marshmallow. I created a schema with Marshmallow and used it to validate data before an object gets created.
 
-----
 **Link to work**: [Github](days/89)
 
 ----
@@ -634,6 +633,7 @@ If a class variable contains a default value, all variables after that must comt
 
 * Learned about the differences and how to modify the __add__ and  __radd__ class methods.
 
+**Link to work**: [Github](days/91)
 ----
 ### Day 92 December 25, 2018
 
@@ -643,3 +643,5 @@ If a class variable contains a default value, all variables after that must comt
 ### Day 93: December 26, 2018
 
 **Today's Focus**: Completed a coding challenge from [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/05_ListsTuples/Equity/proj05.pdf)
+
+**Link to work**: [Github](days/93)
