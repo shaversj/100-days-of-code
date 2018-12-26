@@ -633,3 +633,8 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: Worked on an OOP related project from the [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/08_ClassDesign/Currency/Project10.pdf)
 
 * Learned about the differences and how to modify the __add__ and  __radd__ class methods.
+
+----
+### Day 92 December 25, 2018
+
+**Today's Focus**: Completd a coding challenge on Project Euler.
