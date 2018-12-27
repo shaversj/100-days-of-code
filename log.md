@@ -646,3 +646,10 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: Completed a coding challenge from [MSU Python Projet Archive](http://www.cse.msu.edu/~cse231/PracticeOfComputingUsingPython/05_ListsTuples/Equity/proj05.pdf)
 
 **Link to work**: [Github](days/93)
+
+----
+### Day 94: December 27, 2018
+
+**Today's Focus**: I played around with a few recursive algorithms while reading Data Structures and Algorithms in Python
+
+**Link to work**: [Github](days/94)
