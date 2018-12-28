@@ -653,3 +653,10 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: I played around with a few recursive algorithms while reading Data Structures and Algorithms in Python
 
 **Link to work**: [Github](days/94)
+
+----
+### Day 95: December 28, 2018
+
+**Today's Focus**: Played around with Google's Speech-To-Text API. I used it to transcribe several audio recordings.
+
+**Link to work**: [Github](days/95)
