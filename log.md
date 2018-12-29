@@ -660,3 +660,10 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: Played around with Google's Speech-To-Text API. I used it to transcribe several audio recordings.
 
 **Link to work**: [Github](days/95)
+
+----
+### Day 96: December 29, 2018
+
+**Today's Focus**: Created a script that reads a podcast transcript and puts the data into a sqlite database.
+
+**Link to work**: [Github](days/96)
