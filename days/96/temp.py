@@ -7,7 +7,15 @@ response = requests.get(
     'https://raw.githubusercontent.com/mikeckennedy/talk-python-transcripts/master/transcripts/044.txt', stream=True)
 
 for line in response.iter_lines(decode_unicode=True):
-    print(line)
+    if line == "":
+        pass
+    if line[:1].isdigit() and ': ' in line[:20]:
+        print('correct')
+    else:
+        print('No', line)
+
+    # print(line[:1])
+#   print(line)
 
 
 """ podcast_name = '044_ish.txt'

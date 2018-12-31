@@ -1,5 +1,4 @@
 import sqlite3
-import io
 import unicodedata
 import requests
 from requests_html import HTMLSession
@@ -47,19 +46,12 @@ def get_transcripts():
         response = requests.get(url, stream=True)
 
         for line in response.iter_lines(decode_unicode=True):
-            #insert_into_database(podcast, line)
-            test(podcast, line)
-
-
-def test(podcast, line):
-    if line.isdigit():
-        print('Yes!')
+            insert_into_database(podcast, line)
 
 
 def insert_into_database(podcast, line):
-    print(type(line))
 
-    if line.isdigit() and ': ' in line:
+    if line[:1].isdigit() and ': ' in line[:20]:
 
         try:
             # Remove \xa0 non-breaking spaces from line
@@ -76,7 +68,7 @@ def insert_into_database(podcast, line):
         except IndexError as e:
             print(e, line)
 
-    elif line[0].isdigit():
+    elif line[:1].isdigit():
         try:
             line = unicodedata.normalize('NFKD', line)
             line = line.strip().split(" ", 1)
