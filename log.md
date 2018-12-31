@@ -667,3 +667,10 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: Created a script that reads a podcast transcript and puts the data into a sqlite database.
 
 **Link to work**: [Github](days/96)
+
+----
+### Day 97: December 30, 2018
+
+**Today's Focus**: Continued to work on my podcast transcript project.
+
+**Link to work**: [Github](days/96)
