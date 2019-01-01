@@ -674,3 +674,10 @@ If a class variable contains a default value, all variables after that must comt
 **Today's Focus**: Continued to work on my podcast transcript project.
 
 **Link to work**: [Github](days/96)
+
+----
+### Day 98: December 30, 2018
+
+**Today's Focus**: Learned how to use regular expressions in Python by refactoring the project that I have been working on the past few days. Regular expressions are alot more flexible when you need to parse the contents of multiple files with similar values.
+
+**Link to work**: [Github](days/96)

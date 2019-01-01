@@ -1,5 +1,5 @@
+import re
 import sqlite3
-import unicodedata
 import requests
 from requests_html import HTMLSession
 
@@ -8,13 +8,12 @@ c = conn.cursor()
 
 createTable = """CREATE TABLE podcast(
     podcast INTEGER,
-    timestamp TEXT,
+    time TEXT,
     speaker TEXT,
     content TEXT
 );"""
 
 c.execute(createTable)
-
 
 transcript_names = []
 
@@ -51,38 +50,50 @@ def get_transcripts():
 
 def insert_into_database(podcast, line):
 
-    if line[:1].isdigit() and ': ' in line[:20]:
+    # "00:01:45"
+    # "1:40"
+    timeRegex = re.compile(r'(\d\d:)?\d?\d:\d\d')
+    time_match = re.search(timeRegex, line)
 
-        try:
-            # Remove \xa0 non-breaking spaces from line
-            line = unicodedata.normalize('NFKD', line)
-            line = line.split(" ", 2)
-            timestamp = line[0]
-            speaker = line[1][0:-1]  # Remove colon from name
-            content = line[2]
-            c.execute(
-                "INSERT INTO podcast (podcast, timestamp, speaker, content) VALUES (?, ?, ?, ?)", (podcast, timestamp, speaker, content,))
+    if time_match:
+        # print(time_match.group())
+        if ': ' in line[5:30]:
+            # Jay Miller:
+            # Michael:
+            time = time_match.group()
 
-            conn.commit()
+            speakerRegex = re.compile(r'[a-zA-z]+\s?[a-zA-z]+?:')
+            speaker_match = re.search(speakerRegex, line)
 
-        except IndexError as e:
-            print(e, line)
+            contentRegex = re.compile(r':\s.+')
+            content_match = re.search(contentRegex, line)
 
-    elif line[:1].isdigit():
-        try:
-            line = unicodedata.normalize('NFKD', line)
-            line = line.strip().split(" ", 1)
+            if speaker_match and content_match:
+                speaker = speaker_match.group()
+                speaker = speaker[0:-1]
 
-            timestamp = line[0]
-            content = line[1]
+                content = content_match.group()
+                content = content[2:]
 
-            c.execute(
-                "INSERT INTO podcast (podcast, timestamp, content) VALUES (?, ?, ?)", (podcast, timestamp, content,))
+                c.execute("INSERT INTO podcast (podcast, time, speaker, content) VALUES (?, ?, ?, ?)", (
+                    podcast, time, speaker, content,))
 
-            conn.commit()
+                conn.commit()
 
-        except IndexError as e:
-            print(e, line)
+        else:
+            time = time_match.group()
+
+            contentRegex = re.compile(r'[a-zA-z].+')
+            content_match = re.search(contentRegex, line)
+
+            if content_match:
+
+                content = content_match.group()
+
+                c.execute(
+                    "INSERT INTO podcast (podcast, time, content) VALUES (?, ?, ?)", (podcast, time, content,))
+
+                conn.commit()
 
 
 get_transcript_names()
