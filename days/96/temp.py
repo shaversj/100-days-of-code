@@ -20,6 +20,7 @@ c.execute(createTable)
 transcript_names = []
 
 
+
 def main():
 
     sql_create_table = """CREATE TABLE podcast(
