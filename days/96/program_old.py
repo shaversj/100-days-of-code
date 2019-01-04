@@ -13,6 +13,7 @@ createTable = """CREATE TABLE podcast(
     content TEXT
 );"""
 
+
 c.execute(createTable)
 
 
