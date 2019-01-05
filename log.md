@@ -686,3 +686,10 @@ If a class variable contains a default value, all variables after that must comt
 ### Day 99: January 4, 2019
 
 **Today's Focus**: Completed a coding challenge on project euler.
+
+----
+### Day 100: January 5, 2019
+
+**Today's Focus**: Worked on a coding challenge from [Pybits](https://pybit.es/codechallenge32.html) that required me to use Selenium and Unittest to test the functionality of a website.
+
+**Link to work**: [Github](days/100)
